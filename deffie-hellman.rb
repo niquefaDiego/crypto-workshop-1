@@ -24,7 +24,7 @@ puts "6. A envía X a B y B envía Y a A"
 kA = power_mod(Y,x,p)
 puts "7. A calcula k=Y^x mod p = #{kA}"
 kB = power_mod(X,y,p)
-puts "8. A calcula k=X^y mod p = #{kB}"
+puts "8. B calcula k=X^y mod p = #{kB}"
 assert(kA==kB, "Deffie-Hellam failed")
 puts "9. k=#{kA} es la llave criptográfica para esta sesión de comunicaciones"
 
